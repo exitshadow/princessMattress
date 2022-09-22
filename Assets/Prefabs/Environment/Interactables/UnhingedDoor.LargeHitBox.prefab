@@ -78,6 +78,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 455973960, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
+      propertyPath: isExit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513344, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_Name
       value: UnhingedDoor.LargeHitBox
@@ -88,11 +92,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.23
+      value: 0.652267
       objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.55
+      value: -2.6453047
       objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -104,15 +108,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

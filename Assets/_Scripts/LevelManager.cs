@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Door door;
     [SerializeField] private string nextLevel;
     [SerializeField] private bool needsKey = true;
+    [SerializeField] private bool isMenuScene = false;
 
     public void KeyIsReached()
     {
@@ -26,6 +27,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        if (!isMenuScene) DataManager.Save();
+        
         // check for key
         if (key != null)
             key.manager = this;

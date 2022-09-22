@@ -200,17 +200,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4745395869254513350, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
   m_PrefabInstance: {fileID: 4745395869676269187}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &455973960 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 455973960, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
-  m_PrefabInstance: {fileID: 4745395869676269187}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7d8eb44a720cee48a0175d52b43fe4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,8 +391,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 2022684943}
-  door: {fileID: 455973960}
+  door: {fileID: 4745395869676269188}
   nextLevel: Lvl04
+  needsKey: 1
 --- !u!4 &1123938447 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5147135866057706690, guid: 6c811e84c676e85448170821a86794b9, type: 3}
@@ -1051,5 +1041,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 455973960, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
+--- !u!114 &4745395869676269188 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 957131522592454703, guid: ae5bcd5101993bf4c9f5c4c2411d62fb, type: 3}
+  m_PrefabInstance: {fileID: 4745395869676269187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d8eb44a720cee48a0175d52b43fe4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

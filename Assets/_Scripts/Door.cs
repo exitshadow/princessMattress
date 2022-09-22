@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     [HideInInspector] public bool isOpen = false;
 
     [SerializeField] public bool isExit = false;
+    [SerializeField] public bool isLoad = false;
 
     private Animator animator;
 
@@ -25,10 +26,27 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log($"isExit: {isExit}");
         if (other.CompareTag("Player"))
         {
-            if (isOpen && !isExit && manager != null) manager.DoorIsReached();
-            else if (isOpen && isExit) Application.Quit();
+            if (isOpen)
+            {
+                if (isLoad)
+                {
+                    DataManager.Load();
+                }
+                else
+                {
+                    if (!isExit && manager != null)
+                        manager.DoorIsReached();
+                    else
+                    {
+                        Debug.Log("Qutting.");
+                        Application.Quit();
+                    }
+                }
+
+            }
         }
     }
 
